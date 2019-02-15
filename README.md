@@ -16,7 +16,7 @@ monitor how many documents changes on every job request. make sure that once sta
 3 levels of content.
  - static content 
  - rarely updated dynamic content -> pre-generated and once content is updated, update the static site. use *reverse cache.
- - often updated dynamic content -> generated in place. basically ssr. use cache 
+ - often updated dynamic content -> generated in place. basically ssr. use cache, caching in redis.
  
 use js in client to fill the wholes. 
 
@@ -24,4 +24,4 @@ on the server/disk ignore the url values.
 
 Think about the auth, and how it changes the content depending on user authenticated. 
 
-*reverse cache is when changes happen and then the static site is rebuild based on new updated data.
+*reverse cache is when changes happen and then the static site is rebuild based on new updated data. caching in the static generated pages.
