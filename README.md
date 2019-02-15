@@ -25,3 +25,11 @@ on the server/disk ignore the url values.
 Think about the auth, and how it changes the content depending on user authenticated. 
 
 *reverse cache is when changes happen and then the static site is rebuild based on new updated data. caching in the static generated pages.
+
+
+
+how to notify worker to regenerate static files, and which one.
+
+either configure server to notify worker. like queue. or make a cronjob to retrieve the newest stuff every *time period*
+
+compare object hash, like a snapshot and decide what to re-generate.
